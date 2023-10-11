@@ -5,6 +5,7 @@ img{
     z-index: -1;
 }
 header{
+  overflow-x: hidden;
   height: 80vh;
 }
 h1{
