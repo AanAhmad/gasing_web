@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+.wrap{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.foreg,
+.backg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.backg{
+    transform: translateZ(-100px) scale(2);
+}
+.foreg{
+    transform: translateZ(-50px) scale(1.50);
+}
+h1{
+    overflow:hidden;
+    color: white;
+    font-size: 100px;
+    transform: translateZ(-70px) scale(1.7);
+    font-weight: 700;
+}
+section{
+    padding: 3rem;
+    background-color: #333;
+    font-size: 3rem;
+}
