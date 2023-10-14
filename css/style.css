@@ -32,7 +32,7 @@ header{
     transform: translateZ(-100px) scale(2);
 }
 .foreg{
-    transform: translateZ(-50px) translateY(40px) scale(1.50);
+    transform: translateZ(-50px) translateX(40px) scale(1.50);
 }
 h1{
     overflow:hidden;
