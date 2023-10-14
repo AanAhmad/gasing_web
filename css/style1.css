@@ -22,7 +22,7 @@ header {
 }
 #title {
   z-index: -1;
-  position: relative;
+  position: absolute;
   color: white;
   font-size: 100px;
   font-weight: 700;
