@@ -13,12 +13,7 @@ header {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-}
-#backg{
-    z-index: 0;
-}
-#foreg {
-  z-index: 2;
+  z-index: -2;
 }
 #title {
   z-index: -1;
