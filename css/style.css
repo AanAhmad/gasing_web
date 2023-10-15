@@ -1,7 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Rounded+1c:wght@500&family=Outfit:wght@300&family=PT+Sans&family=Poppins&display=swap');
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #8e8e8e;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gold;
+    border-radius: 9px;
+}
+
 body{
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+nav{
+    height: 7vh;
+    transition: 300ms ease-in-out;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin: 0 10px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    border: none !important;
 }
 .wrap{
     height: 100vh;
@@ -25,24 +57,110 @@ header{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
 }
 
 .backg{
-    transform: translateZ(-100px) scale(2);
+    transform: translateZ(-100px) scale(2.02);
+    z-index: -3;
 }
 .foreg{
-    transform: translateZ(-50px) scale(1.50);
+<<<<<<< HEAD
+    transform: translateZ(-50px) scale(1.52);
+    z-index: -1;
+=======
+    transform: translateZ(-50px) translateX(40px) scale(1.50);
+>>>>>>> f8bacce3ce6d9fd90f3f6cb0cba6cafca04930c7
 }
-h1{
-    overflow:hidden;
-    color: white;
-    font-size: 100px;
+.title{
+    position: absolute;
+    color: #363636;
+    font-size: 168px;
     transform: translateZ(-70px) scale(1.7);
+    top: 16%;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
+    overflow:hidden;
+    z-index: -2;
 }
-section{
-    padding: 3rem;
-    background-color: #333;
-    font-size: 3rem;
+.ol{
+    color: white !important;
+    font-size: 172px !important;
+}
+.button{
+    position: absolute;
+    text-decoration:none;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-weight: 600;
+    bottom: 43%;
+}
+.subtitle{
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    font-size: large;
+    color: white;
+    bottom: 49%;
+    z-index: -2;
+}
+.desc-bromo{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    left: 16vh;
+    top: 80vh;
+}
+.t-bromo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.d-bromo{
+    font-family: 'Outfit', sans-serif;
+}
+.tx-bromo{
+    color: white;
+    background-color: #363636;
+    padding: 1px 3px;
+}
+.bg-dark{
+    height: 100vh;
+}
+@media screen and (max-width:540px) {
+    nav{
+        background-color: #363636;
+    }
+    nav .container{
+        background-color: #363636;
+        color: white;
+    }
+    .title{
+        font-size: 54px;
+        top: 32%;
+    }
+    .ol{
+        font-size: 56px !important;
+    }
+    .button{
+        bottom: 38%;
+    }
+    .subtitle{
+        font-size: medium;
+        text-align: center;
+    }
+    .desc-bromo{
+        right: -20px;
+        position: absolute;
+        background-color: white;
+        padding: 10px 20px;
+        left: 16vh;
+        top: 74vh;
+    }
+    .t-bromo{
+        font-size: large;
+    }
+    .d-bromo{
+        font-size: small;
+    }
 }
