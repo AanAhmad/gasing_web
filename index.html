@@ -33,25 +33,23 @@
                 </div>
             </div>
         </nav>
-        <header class="container-fluid">
-            <img src="assets/ezgif.com-gif-maker.webp" alt="" class="backg">
-            <img class="foreg" src="assets/ezgif.com-gif-maker-transp.webp" alt="">
+        <header class="header container-fluid">
+            <img src="assets/ezgif.com-gif-maker.webp" alt="" class="b-bromo">
+            <img class="f-bromo" src="assets/ezgif.com-gif-maker-transp.webp" alt="">
             <h1 class="title">Fallen Heaven</h1>
             <h1 class="title ol">Fallen Heaven</h1>
             <p class="subtitle" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
             <a class="button" id="exp-btn" href="">Explore</a>
             <div class="desc-bromo">
-                <h1 class="t-bromo">Bromo</h1>
-                <p class="d-bromo">"Di batas cakrawala mulai tampak semburat warna keemasan <br>
-                    Pertanda mentari pagi akan hadir di langit <span class="tx-bromo">Bromo</span>"</p>
-            </div>
-        </header>
-        <div class="ijen bg-dark" id="ijen">
-            <div class="container-fluid position-absolute">
-                <div class="container">
-                    
+                <div class="w-bromo">
+                    <h1 class="t-bromo">Bromo</h1>
+                    <p class="d-bromo">"Di batas cakrawala mulai tampak semburat warna keemasan <br>
+                        Pertanda mentari pagi akan hadir di langit <span class="tx-bromo">Bromo</span>"</p>
                 </div>
             </div>
+        </header>
+        <div class="ijen" id="ijen">
+            <img class="b-ijen" src="assets/van-dc-tKNai5AMpVk-unsplash.jpg" alt="">
         </div>
     </div>
     <script>
@@ -65,8 +63,6 @@
         wrap.addEventListener('scroll', function () {
             let value = this.scrollTop;
             let roundvalue = Math.round(value);
-
-            console.log(roundvalue);
             xp_btn.style.transform = 'translateY(' + roundvalue * 0.3 + 'px)';
             sub.style.transform = 'translateY(' + roundvalue * 0.3 + 'px)';
         })

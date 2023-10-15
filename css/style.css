@@ -41,29 +41,29 @@ nav ul li a{
     overflow-x: hidden;
     perspective: 100px;
 }
-header{
+.header{
+    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
 }
-.foreg,
-.backg{
+.f-bromo,
+.b-bromo{
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.backg{
+.b-bromo{
     transform: translateZ(-100px) scale(2.02);
     z-index: -3;
 }
-.foreg{
+.f-bromo{
     transform: translateZ(-50px) scale(1.52);
     z-index: -1;
 }
@@ -104,9 +104,14 @@ header{
 .desc-bromo{
     position: absolute;
     background-color: white;
-    padding: 10px 20px;
-    left: 16vh;
+    width: 80vw;
+    padding: 15px 20px;
+    left: -45vw;
     top: 80vh;
+}
+.w-bromo{
+    width: 40%;
+    margin-left: auto;
 }
 .t-bromo{
     font-family: 'Poppins', sans-serif;
@@ -120,8 +125,19 @@ header{
     background-color: #363636;
     padding: 1px 3px;
 }
-.bg-dark{
-    height: 100vh;
+.ijen{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-ijen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 @media screen and (max-width:540px) {
     nav{
