@@ -64,8 +64,17 @@ header{
     z-index: -3;
 }
 .foreg{
+<<<<<<< HEAD
     transform: translateZ(-50px) scale(1.52);
     z-index: -1;
+=======
+<<<<<<< HEAD
+    transform: translateZ(-50px) scale(1.52);
+    z-index: -1;
+=======
+    transform: translateZ(-50px) translateX(40px) scale(1.50);
+>>>>>>> f8bacce3ce6d9fd90f3f6cb0cba6cafca04930c7
+>>>>>>> 59a7f86d7faec2d7ce2a130b851e6b851d44b796
 }
 .title{
     position: absolute;
