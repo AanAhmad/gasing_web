@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Rounded+1c:wght@500&family=Outfit:wght@300&family=Poppins&display=swap');
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #8e8e8e;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gold;
+    border-radius: 9px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 7vh;
+    transition: 300ms ease-in-out;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin: 0 10px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.wrap{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.foreg,
+.backg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.backg{
+    transform: translateZ(-100px) scale(2.02);
+    z-index: -3;
+}
+.foreg{
+    transform: translateZ(-50px) scale(1.52);
+    z-index: -1;
+}
+header h1{
+    position: absolute;
+    color: white;
+    font-size: 168px;
+    transform: translateZ(-70px) scale(1.7);
+    top: 16%;
+    filter: opacity(0.85);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    overflow:hidden;
+    z-index: -2;
+}
+header .button{
+    position: absolute;
+    text-decoration:none;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    bottom: 30%;
+}
+header .subtitle{
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    font-size: large;
+    color: white;
+    z-index: -2;
+}
+.bg-dark{
+    height: 100vh;
+}

@@ -6,68 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fallen Heaven</title>
 </head>
 
 <body>
-    <div class="wrap w-100">
-        <header>
-            <img src="assets/nanda-firdaus-mjr_5_ntTf8-unsplash.jpg" alt="" id="backg">
-            <img id="foreg" src="assets/nanda-firdaus-mjr_5_ntTf8-unsplash.png" alt="">
-            <h1 id="title">Fallen Heaven</h1>
+    <div class="wrap" id="wrap">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-opacity-0 position-absolute w-100" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="container-fluid">
+            <img src="assets/ezgif.com-gif-maker.webp" alt="" class="backg">
+            <img class="foreg" src="assets/ezgif.com-gif-maker-transp.webp" alt="">
+            <h1 class="title">Fallen Heaven</h1>
+            <h1 class="title ol">Fallen Heaven</h1>
+            <p class="subtitle" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
+            <a class="button" id="exp-btn" href="">Explore</a>
+            <div class="desc-bromo">
+                <h1 class="t-bromo">Bromo</h1>
+                <p class="d-bromo">"Di batas cakrawala mulai tampak semburat warna keemasan <br>
+                    Pertanda mentari pagi akan hadir di langit <span class="tx-bromo">Bromo</span>"</p>
+            </div>
         </header>
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni illum quisquam laborum cupiditate ad
-            praesentium, iure modi ducimus quaerat! Quae numquam qui obcaecati hic esse labore architecto a tempore et,
-            deserunt sed totam ducimus, quod dolore officia quis sequi, officiis nulla dolores voluptas cupiditate omnis
-            nemo! Dolorum voluptatem totam impedit voluptate saepe quos rem corrupti? Ea nesciunt doloremque maiores id,
-            aspernatur fugit nostrum consequuntur suscipit debitis fugiat laudantium laboriosam asperiores sint
-            repellendus
-            illum obcaecati. Nisi praesentium voluptatum delectus eveniet iure ut fugit accusamus aliquam deserunt sint,
-            similique laudantium molestiae officiis obcaecati quam perspiciatis quibusdam doloribus illo distinctio
-            nulla
-            eaque! <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni illum quisquam laborum cupiditate ad
-            praesentium, iure modi ducimus quaerat! Quae numquam qui obcaecati hic esse labore architecto a tempore et,
-            deserunt sed totam ducimus, quod dolore officia quis sequi, officiis nulla dolores voluptas cupiditate omnis
-            nemo! Dolorum voluptatem totam impedit voluptate saepe quos rem corrupti? Ea nesciunt doloremque maiores id,
-            aspernatur fugit nostrum consequuntur suscipit debitis fugiat laudantium laboriosam asperiores sint
-            repellendus
-            illum obcaecati. Nisi praesentium voluptatum delectus eveniet iure ut fugit accusamus aliquam deserunt sint,
-            similique laudantium molestiae officiis obcaecati quam perspiciatis quibusdam doloribus illo distinctio
-            nulla
-            eaque! <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni illum quisquam laborum cupiditate ad
-            praesentium, iure modi ducimus quaerat! Quae numquam qui obcaecati hic esse labore architecto a tempore et,
-            deserunt sed totam ducimus, quod dolore officia quis sequi, officiis nulla dolores voluptas cupiditate omnis
-            nemo! Dolorum voluptatem totam impedit voluptate saepe quos rem corrupti? Ea nesciunt doloremque maiores id,
-            aspernatur fugit nostrum consequuntur suscipit debitis fugiat laudantium laboriosam asperiores sint
-            repellendus
-            illum obcaecati. Nisi praesentium voluptatum delectus eveniet iure ut fugit accusamus aliquam deserunt sint,
-            similique laudantium molestiae officiis obcaecati quam perspiciatis quibusdam doloribus illo distinctio
-            nulla
-            eaque! <br><br>
-        </section>
+        <div class="container-fluid bg-dark" id="ijen">
+            <div class="container-fluid position-absolute">
+                <div class="container position-relative w-100 h-100">
+                </div>
+            </div>
+        </div>
     </div>
     <script>
-        let forg = document.getElementById('foreg');
-        let backg = document.getElementById('backg');
-        let title = document.getElementById('title');
-        window.addEventListener('scroll', function () {
-            let value = window.scrollY;
-            title.style.top = value * 1.5 + 'px';
+        let tog = document.getElementsByClassName("navbar-toggler");
+        console.log(tog);
+
+        let wrap = document.getElementById('wrap');
+        let xp_btn = document.getElementById('exp-btn');
+        let sub = document.getElementById('sub');
+        let nav = document.getElementById('navbar');
+        
+        wrap.addEventListener('scroll', function () {
+            let value = this.scrollTop;
+            let roundvalue = Math.round(value);
+
+            console.log(roundvalue);
+            xp_btn.style.transform = 'translateY('+roundvalue * 0.3 +'px)';
+            sub.style.transform = 'translateY('+roundvalue * 0.3 +'px)';
+
         })
+        
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
