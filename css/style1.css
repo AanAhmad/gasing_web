@@ -6,19 +6,21 @@ header {
   height: 100vh;
   width: 100%;
 }
-#foreg,
 #backg {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-}
-#backg{
-    z-index: 0;
+  z-index: -2;
 }
 #foreg {
-  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 1;
 }
 #title {
   z-index: -1;
@@ -26,7 +28,6 @@ header {
   color: white;
   font-size: 100px;
   font-weight: 700;
-  z-index: 900;
 }
 section {
   padding: 3rem;
