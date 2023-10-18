@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <title>Fallen Heaven</title>
 </head>
 
@@ -14,7 +15,7 @@
     <div class="wrap" id="wrap">
         <nav class="navbar navbar-expand-sm navbar-dark bg-opacity-0 position-absolute w-100" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navBrand" href="#"><span class="f">F</span><span class="h">H</span></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -23,11 +24,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home <span
-                                    class="visually-hidden">(current)</span></a>
+                            <a class="nav-link active" href="#">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link active saya" href="#">Hubungi Saya</a>
                         </li>
                     </ul>
                 </div>
@@ -36,37 +36,35 @@
         <header class="header container-fluid">
             <img src="assets/ezgif.com-gif-maker.webp" alt="" class="b-bromo">
             <img class="f-bromo" src="assets/ezgif.com-gif-maker-transp.webp" alt="">
-            <h1 class="title">Fallen Heaven</h1>
-            <h1 class="title ol">Fallen Heaven</h1>
-            <p class="subtitle" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
+            <h1 class="title fade">Fallen Heaven</h1>
+            <h1 class="title ol fade">Fallen Heaven</h1>
+            <p class="subtitle fade fade-delay" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
             <a class="button" id="exp-btn" href="">Explore</a>
-            <div class="desc-bromo">
+            <div class="desc-bromo left-right">
                 <div class="w-bromo">
                     <h1 class="t-bromo">Bromo</h1>
-                    <p class="d-bromo">"Di batas cakrawala mulai tampak semburat warna keemasan <br>
-                        Pertanda mentari pagi akan hadir di langit <span class="tx-bromo">Bromo</span>"</p>
+                    <p class="d-bromo">"Segela keindahannya, yang diciptakan<br>
+                        dengan atas nama sang <span class="tx-bromo">Brahma</span>"</p>
                 </div>
             </div>
         </header>
-        <div class="ijen" id="ijen">
-            <img class="b-ijen" src="assets/van-dc-tKNai5AMpVk-unsplash.jpg" alt="">
+        <div class="container-fluid data-indo">
+            <div class="indonesia">
+                <div class="image">
+                    <img src="assets/pagoda-3240169_1920.jpg" alt="pagoda">
+                    <div class="kotak"></div>
+                </div>
+                <div class="teks">
+                    <h1 class="indo-title"><span class="surga">Surga</span> di garis Katulistiwa</h1>
+                    <p class="indo-teks">Indonesia, sebuah negara di Asia Tenggara. Yang diberkati dengan segala
+                        kekayaan dan keindahannya. Serta tempat tinggal bagi segala aneka flora dan fauna. Terbentang
+                        dari Sabang hingga Merauke, dan menjadi rumah bagi ribuan suku bangsa</p>
+                </div>
+            </div>
         </div>
     </div>
-    <script>
-        let tog = document.getElementsByClassName("navbar-toggler");
-        console.log(tog);
-
-        let wrap = document.getElementById('wrap');
-        let xp_btn = document.getElementById('exp-btn');
-        let sub = document.getElementById('sub');
-        let nav = document.getElementById('navbar');
-        wrap.addEventListener('scroll', function () {
-            let value = this.scrollTop;
-            let roundvalue = Math.round(value);
-            xp_btn.style.transform = 'translateY(' + roundvalue * 0.3 + 'px)';
-            sub.style.transform = 'translateY(' + roundvalue * 0.3 + 'px)';
-        })
-    </script>
+    <a href="" class="position-fixed">UP</a>
+    <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 

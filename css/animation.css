@@ -1,0 +1,22 @@
+@keyframes left-right{
+    from{
+        left: -20vw;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes fade{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+.left-right{
+    animation: left-right 1.5s ease-in-out both;
+}
+.fade{
+    animation: fade 1.5s ease-in forwards;
+}
+.fade-delay{
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
