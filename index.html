@@ -12,35 +12,34 @@
 </head>
 
 <body>
-    <div class="wrap" id="wrap">
+    <section class="headerBanner">
         <nav class="navbar navbar-expand-sm navbar-dark bg-opacity-0 position-absolute w-100" id="navbar">
             <div class="container">
                 <a class="navBrand" href="#"><span class="f">F</span><span class="h">H</span></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav ms-auto mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Beranda</a>
+                            <a class="nav-el" href="#">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active saya" href="#">Hubungi Saya</a>
+                            <a class="nav-el saya" href="#">Hubungi Saya</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <header class="header container-fluid">
-            <img src="assets/ezgif.com-gif-maker.webp" alt="" class="b-bromo">
-            <img class="f-bromo" src="assets/ezgif.com-gif-maker-transp.webp" alt="">
-            <h1 class="title fade">Fallen Heaven</h1>
-            <h1 class="title ol fade">Fallen Heaven</h1>
-            <p class="subtitle fade fade-delay" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
-            <a class="button" id="exp-btn" href="">Explore</a>
-            <div class="desc-bromo left-right">
+            <img src="assets/bromo_b.webp" alt="" class="b-bromo" id="backB">
+            <img class="f-bromo" id="frontB" src="assets/bromo_f.webp" alt="">
+            <h1 class="titleB animate" id="titleB">Fallen Heaven</h1>
+            <h1 class="titleB animate ol" id="titleBm">Fallen Heaven</h1>
+            <p class="subtitle animate" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
+            <a class="button animate" id="xp-btn" href="">Explore</a>
+            <div class="desc-bromo animate" id="descB">
                 <div class="w-bromo">
                     <h1 class="t-bromo">Bromo</h1>
                     <p class="d-bromo">"Segela keindahannya, yang diciptakan<br>
@@ -48,21 +47,53 @@
                 </div>
             </div>
         </header>
-        <div class="container-fluid data-indo">
-            <div class="indonesia">
-                <div class="image">
-                    <img src="assets/pagoda-3240169_1920.jpg" alt="pagoda">
-                    <div class="kotak"></div>
+    </section>
+    <section id="indonesia-intro" class="sec-intro">
+        <div class="container-fluid bg-light position-relative px-5 intro-container">
+            <div class="container-fluid indo-intro overflow-hidden">
+                <img src="assets/indo.jpg" alt="image">
+                <div class="triangle"></div>
+                <div class="subtriangle">
+                    <div class="intro-desc">
+                        <h1 class="text-light">Sebuah <span class="orange">surga</span> di garis khatulistiwa</h1>
+                        <p class=" text-light">Indonesia, sebuah negara di Asia Tenggara. Indonesia memiliki luas
+                            1,905,000 Km<span class="dua">2</span> dengan populasi sebesar 273,8 Juta. Ini membuat
+                            Indonesia menjadi negara dengan populasi terbanyak ke-4 setelah Amerika Serikat. Terdapat 38
+                            Provinsi yang berada di dalam wilayah negara Indonesia dan ibukota dari Indonesia berada di
+                            Kota Jakarta.</p>
+                    </div>
                 </div>
-                <div class="teks">
-                    <h1 class="indo-title"><span class="surga">Surga</span> di garis Katulistiwa</h1>
-                    <p class="indo-teks">Indonesia, sebuah negara di Asia Tenggara. Yang diberkati dengan segala
-                        kekayaan dan keindahannya. Serta tempat tinggal bagi segala aneka flora dan fauna. Terbentang
-                        dari Sabang hingga Merauke, dan menjadi rumah bagi ribuan suku bangsa</p>
+            </div>
+            <div class="container-fluid indo-kekayaan overflow-hidden">
+                <img src="assets/tari_bali.jpg" alt="image">
+                <div class="triangle"></div>
+                <div class="subtriangle">
+                    <div class="kekayaan-desc">
+                        <h1 class="text-light">Dengan <span class="orange">kekayaan</span> yang takkan ada habisnya</h1>
+                        <p class=" text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem soluta
+                            impedit maiores sint voluptatibus placeat corrupti deleniti. Natus nostrum odit
+                            reprehenderit quas
+                            quia quasi fugiat cupiditate placeat! Quia, cumque assumenda?</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="indo-gallery" class="sec-gallery">
+        <div class="container-fluid gallery-indo">
+            <div class="container h-100">
+                <h1 class="indo-title text-center mt-3">Indonesia</h1>
+                <div class="colase">
+                    <div class="one">One</div>
+                    <div class="two">Two</div>
+                    <div class="three">Three</div>
+                    <div class="four">Four</div>
+                    <div class="five">Five</div>
+                    <div class="six">Six</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <a href="" class="position-fixed">UP</a>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>

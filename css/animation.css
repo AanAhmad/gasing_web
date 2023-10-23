@@ -1,22 +1,42 @@
-@keyframes left-right{
-    from{
-        left: -20vw;
-    }
-    to{
-        left: 0;
-    }
+.headerBanner .titleB.animate{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
-@keyframes fade{
-    0% {opacity: 0;}
-    100%{opacity: 1;}
+.headerBanner p.animate{
+    opacity: 0;
+    transition: opacity 1s ease-in-out 500ms;
 }
-.left-right{
-    animation: left-right 1.5s ease-in-out both;
+.headerBanner .button.animate{
+    opacity: 0;
+    transition: opacity 1s ease-in-out 800ms, background 200ms ease-in-out, color 200ms ease-in-out;
 }
-.fade{
-    animation: fade 1.5s ease-in forwards;
+.headerBanner.show-animate .animate{
+    opacity: 1;
 }
-.fade-delay{
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+.headerBanner .desc-bromo.animate{
+    left: -100px;
+    transition: left 1s ease-in-out;
+}
+.headerBanner.show-animate .desc-bromo.animate{
+    left: 0;
+}
+.sec-intro .indo-intro .triangle{
+    transform: translateX(100px);
+    transition: all 1s ease-in-out;
+}
+.sec-intro .indo-intro .subtriangle{
+    transform: translateX(100px);
+    transition: all 900ms ease-in-out;
+}
+.sec-intro .indo-kekayaan .triangle{
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+}
+.sec-intro .indo-kekayaan .subtriangle{
+    transform: translateX(-100px);
+    transition: all 900ms ease-in-out;
+}
+.sec-intro.show-animate .triangle,
+.sec-intro.show-animate .subtriangle{
+    transform: translateX(0);
 }

@@ -50,115 +50,79 @@
             <h1 class="title">Fallen Heaven</h1>
             <a class="button" id="exp-btn" href="">Explore</a>
         </header>
-        <div class="ijen bg-dark" id="ijen">
-            <div class="container position-absolute justify-content-center w-100 h-100">
-                <p id="p" class="moving-element text-light"">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, molestias.</p>
-            </div>
-        </div>
-        <div class="boro bg-dark" id="ijen">
-            <div class="container position-absolute justify-content-center w-100 h-100">
-                <p id="p1" class="moving-element text-light"">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, molestias.</p>
-            </div>
-        </div>
-        <div class="raja bg-dark" id="ijen">
-            <div class="container position-absolute justify-content-center w-100 h-100">
-                <p id="p2" class="moving-element text-light"">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, molestias.</p>
-            </div>
-        </div>
-        <div class=" bg-dark" id="ijen">
-            <div class="container position-absolute justify-content-center w-100 h-100">
-                <p class="moving-element text-light"">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, molestias.</p>
-            </div>
-        </div>
-    </div>
-    <!-- <script>
-        let wrap = document.getElementById('wrap');
-        let xp_btn = document.getElementById('exp-btn');
+        <script>
+            let wrap = document.getElementById('wrap');
+            let xp_btn = document.getElementById('exp-btn');
 
-        wrap.addEventListener('scroll', function () {
-            let value = this.scrollTop;
-            let roundvalue = Math.round(value);
+            wrap.addEventListener('scroll', function () {
+                let value = this.scrollTop;
+                let roundvalue = Math.round(value);
 
-            xp_btn.style.transform = 'translateY('+roundvalue * 0.3 +'px)';
-        })
+                xp_btn.style.transform = 'translateY(' + roundvalue * 0.3 + 'px)';
+            })
 
-        document.addEventListener("DOMContentLoaded", function () {
-            let wrap = document.querySelector('.wrap');
-            
-
-            wrap.addEventListener("scroll", function () {
-                    let container = document.querySelector(".ijen");
-                    let movingElement = document.getElementById('p');
-                    
-                    if (movingElement) { // Pastikan elemen ditemukan sebelum mengubah propertinya.
-                        let containerRect = container.getBoundingClientRect();
-                        let wrapRect = wrap.getBoundingClientRect();
-
-                        if (containerRect.top < wrapRect.bottom && containerRect.bottom >= wrapRect.top) {
-                            let scrollValue = wrap.scrollTop;
-                            console.log(scrollValue);
-                            movingElement.style.transform = "translateX(" + scrollValue + "px)";
-                        }
-                    }
-                    let container1 = document.querySelector(".boro");
-                    let movingElement1 = document.getElementById("p1");
-                    
-                    if (movingElement) { // Pastikan elemen ditemukan sebelum mengubah propertinya.
-                        let containerRect = container1.getBoundingClientRect();
-                        let wrapRect = wrap.getBoundingClientRect();
-
-                        if (containerRect.top < wrapRect.bottom && containerRect.bottom >= wrapRect.top) {
-                            let scrollValue = wrap.scrollTop - containerRect.top;
-                            console.log(scrollValue);
-                            movingElement1.style.transform = "translateX(" + scrollValue + "px)";
-                        }
-                    }
-                    let container2 = document.querySelector(".raja");
-                    let movingElement2 = document.getElementById("p2");
-                    
-                    if (movingElement) { // Pastikan elemen ditemukan sebelum mengubah propertinya.
-                        let containerRect = container2.getBoundingClientRect();
-                        let wrapRect = wrap.getBoundingClientRect();
-
-                        if (containerRect.top < wrapRect.bottom && containerRect.bottom >= wrapRect.top) {
-                            let scrollValue = wrap.scrollTop - (containerRect.top * 2);
-                            console.log(scrollValue);
-                            movingElement2.style.transform = "translateX(" + scrollValue + "px)";
-                        }
-                    }
+            document.addEventListener("DOMContentLoaded", function () {
+                let wrap = document.querySelector('.wrap');
+                wrap.addEventListener("scroll", function () {
+                    let
+                        container = document.querySelector(".ijen"); let
+                            movingElement = document.getElementById('p'); if (movingElement) {
+                                let
+                                    containerRect = container.getBoundingClientRect(); let
+                                        wrapRect = wrap.getBoundingClientRect(); if (containerRect.top < wrapRect.bottom &&
+                                            containerRect.bottom >= wrapRect.top) {
+                                    let scrollValue = wrap.scrollTop;
+                                    console.log(scrollValue);
+                                    movingElement.style.transform = "translateX(" + scrollValue + "px)";
+                                }
+                            }
+                });
             });
-        });
 
 
 
-    </script> -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let para = document.getElementById('p');
-            let wrap = document.querySelector('.wrap');
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let para = document.getElementById('p');
+                let wrap = document.querySelector('.wrap');
 
-            function revealElement(element) {
-                let windowHeight = wrap.innerHeight;
-                let elementTop = element.getBoundingClientRect().top;
+                function revealElement(element) {
+                    let windowHeight = wrap.innerHeight;
+                    let elementTop = element.getBoundingClientRect().top;
 
-                if (elementTop < windowHeight) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
+                    if (elementTop < windowHeight) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
                 }
-            }
 
-            function handleScroll() {
-                elements.forEach(function(element) {
-                    revealElement(element);
-        });
-    }
+                function handleScroll() {
+                    elements.forEach(function (element) {
+                        revealElement(element);
+                    });
+                }
 
-    window.addEventListener('scroll', handleScroll);
-});
+                window.addEventListener('scroll', handleScroll);
+            });
 
 
-    </script>
-    <script src="js/bootstrap.js"></script>
+        </script>
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-animate");
+                    } else {
+                        entry.target.classList.remove("show-animate");
+                    }
+                });
+            });
+
+            const section = document.querySelectorAll("section");
+            section.forEach((el) => observer.observe(el));
+        </script>
+        <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
