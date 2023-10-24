@@ -337,7 +337,7 @@ nav button {
   background-position: center;
 }
 .text-box.h-tiga{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/islam.jpeg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/islam.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -357,7 +357,7 @@ nav button {
   background-position: top;
 }
 .text-box.h-tujuh{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/reformasi.jpeg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/reformasi.jpg);
   background-size: cover;
   background-position: top;
 }
