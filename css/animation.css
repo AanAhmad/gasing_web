@@ -28,6 +28,10 @@
     transform: translateX(100px);
     transition: all 900ms ease-in-out;
 }
+.sec-intro .indo-intro .subtriangle .intro-desc{
+    opacity: 0;
+    transition: all 900ms ease-in-out;
+}
 .sec-intro .indo-kekayaan .triangle{
     transform: translateX(-100px);
     transition: all 1s ease-in-out;
@@ -36,7 +40,107 @@
     transform: translateX(-100px);
     transition: all 900ms ease-in-out;
 }
+.sec-intro .indo-kekayaan .subtriangle .kekayaan-desc{
+    opacity: 0;
+    transition: all 900ms ease-in-out;
+}
 .sec-intro.show-animate .triangle,
 .sec-intro.show-animate .subtriangle{
     transform: translateX(0);
+}
+.sec-intro.show-animate .subtriangle .intro-desc,
+.sec-intro.show-animate .subtriangle .kekayaan-desc{
+    opacity: 1;
+}
+.history .h-satu{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms ease-in;
+}
+.history .h-dua{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 900ms ease-in 200ms;
+}
+.history .h-tiga{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms ease-in 400ms;
+}
+.history .h-empat{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 900ms ease-in 600ms;
+}
+.history .h-lima{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms ease-in 800ms;
+}
+.history .h-enam{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 900ms ease-in 1000ms;
+}
+.history .h-tujuh{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms ease-in 1200ms;
+}
+
+.history.show-animate .h-satu{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-dua{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-tiga{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-empat{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-lima{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-enam{
+    transform: translateX(0);
+    opacity: 1;
+}
+.history.show-animate .h-tujuh{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 540px){
+    .triangle, .subtriangle{
+        transform: none !important;
+    }
+    .subtriangle .intro-desc,
+    .subtriangle .kekayaan-desc{
+        opacity: 1;
+    }
+    .sec-intro .indo-intro{
+        opacity: 0;
+        transition: opacity 800ms ease-in-out;
+    }
+    .sec-intro .indo-kekayaan{
+        opacity: 0;
+        transition: opacity 800ms ease-in-out 200ms;
+    }
+    .sec-intro.show-animate .indo-intro,
+    .sec-intro.show-animate .indo-kekayaan{
+        opacity: 1;
+    }
+    .history .text-box{
+        transform: translateX(100px) !important;
+    }
+    .history.show-animate .text-box{
+        transform: translateX(0) !important;
+    }
 }

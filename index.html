@@ -3,11 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Jelajahi setiap bagian dari nusantara">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Fallen Heaven</title>
 </head>
 
@@ -32,32 +37,33 @@
                 </div>
             </div>
         </nav>
-        <header class="header container-fluid">
-            <img src="assets/bromo_b.webp" alt="" class="b-bromo" id="backB">
-            <img class="f-bromo" id="frontB" src="assets/bromo_f.webp" alt="">
+        <header id="header" class="header container-fluid">
+            <img src="assets/bromo_b.webp" alt="bromo" class="b-bromo" id="backB" loading="eager">
+            <img class="f-bromo" id="frontB" src="assets/bromo_f.webp" alt="bromo" loading="lazy">
             <h1 class="titleB animate" id="titleB">Fallen Heaven</h1>
             <h1 class="titleB animate ol" id="titleBm">Fallen Heaven</h1>
             <p class="subtitle animate" id="sub">Beragam cerita dari berbagai belahan Nusantara</p>
-            <a class="button animate" id="xp-btn" href="">Explore</a>
+            <a class="button animate" id="xp-btn" href="#indonesia-intro">Explore</a>
             <div class="desc-bromo animate" id="descB">
                 <div class="w-bromo">
                     <h1 class="t-bromo">Bromo</h1>
-                    <p class="d-bromo">"Segela keindahannya, yang diciptakan<br>
+                    <p class="d-bromo">"Segela keindahannya diciptakan<br>
                         dengan atas nama sang <span class="tx-bromo">Brahma</span>"</p>
                 </div>
             </div>
+            <a href="#header" id="up" class="up"><i class="fa-solid fa-chevron-up"></i></a>
         </header>
     </section>
     <section id="indonesia-intro" class="sec-intro">
-        <div class="container-fluid bg-light position-relative px-5 intro-container">
+        <div class="container-fluid bg-light position-relative px-5 intro-container overflow-hidden">
             <div class="container-fluid indo-intro overflow-hidden">
-                <img src="assets/indo.jpg" alt="image">
+                <img src="assets/borobudur.jpg" alt="image" loading="lazy">
                 <div class="triangle"></div>
                 <div class="subtriangle">
                     <div class="intro-desc">
                         <h1 class="text-light">Sebuah <span class="orange">surga</span> di garis khatulistiwa</h1>
                         <p class=" text-light">Indonesia, sebuah negara di Asia Tenggara. Indonesia memiliki luas
-                            1,905,000 Km<span class="dua">2</span> dengan populasi sebesar 273,8 Juta. Ini membuat
+                            1.905.000 Km<span class="dua">2</span> dengan populasi sebesar 273,8 Juta. Ini membuat
                             Indonesia menjadi negara dengan populasi terbanyak ke-4 setelah Amerika Serikat. Terdapat 38
                             Provinsi yang berada di dalam wilayah negara Indonesia dan ibukota dari Indonesia berada di
                             Kota Jakarta.</p>
@@ -65,15 +71,130 @@
                 </div>
             </div>
             <div class="container-fluid indo-kekayaan overflow-hidden">
-                <img src="assets/tari_bali.jpg" alt="image">
+                <img src="assets/tari_bali.jpg" alt="image" loading="lazy">
                 <div class="triangle"></div>
                 <div class="subtriangle">
                     <div class="kekayaan-desc">
                         <h1 class="text-light">Dengan <span class="orange">kekayaan</span> yang takkan ada habisnya</h1>
-                        <p class=" text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem soluta
-                            impedit maiores sint voluptatibus placeat corrupti deleniti. Natus nostrum odit
-                            reprehenderit quas
-                            quia quasi fugiat cupiditate placeat! Quia, cumque assumenda?</p>
+                        <p class=" text-light">Indonesia merupakan negara tropis yang menyimpan segala kekayaan di
+                            dalamnya. Indonesia merupakan tempat tinggal bagi 8.000 spesies tumbuhan serta 2.215 spesies
+                            hewan. Bukan hanya itu, Indonesia dihuni oleh 1.340 suku yang tersebar dari Sabang hingga
+                            Merauke.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="history">
+        <div class="container-fluid position-relative overflow-hidden">
+            <h1 class="history-head">Indonesia dari masa ke masa</h1>
+            <div class="timeline">
+                <div class="t-container left-container">
+                    <div class="time">
+                        <p>?</p>
+                    </div>
+                    <div class="text-box h-satu">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Prasejarah</h2>
+                            <small>?-400M</small>
+                            <p class="h-desc">Tidak tau kapan masa prasejarah di Indonesia berakhir namun diperkirakan
+                                masa
+                                ini berakhir pada 400M
+                            </p>
+                        </div>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container right-container">
+                    <div class="time">
+                        <p>400M</p>
+                    </div>
+                    <div class="text-box h-dua">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Hindu Buddha</h2>
+                            <small>400M-1500M</small>
+                            <p class="h-desc">Masa ini ditandai dengan munculnya kerajaan dengan yang menganut agama
+                                Hindu
+                                dan Buddha. Penemuan prasasti di Kutai Kalimantan Timur yang bertuliskan 400 M.
+                            </p>
+                        </div>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container left-container">
+                    <div class="time">
+                        <p>1300M</p>
+                    </div>
+                    <div class="text-box h-tiga">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Islam</h2>
+                            <small>1300M-1700M</small>
+                            <p class="h-desc">Masuknya Islam ke Indonesia perlahan menggantikan pengaruh Hindu-Buddha.
+                                Masa
+                                Islam bermula pada tahun 1300-1700.
+                            </p>
+                        </div>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container right-container">
+                    <div class="time">
+                        <p>1600M</p>
+                    </div>
+                    <div class="text-box h-empat">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Kolonialisme</h2>
+                            <small>1600M-1945M</small>
+                            <p class="h-desc">Masa Kolonialisme berlangsung pada 1600-1942. Era ini ditandai dengan
+                                datangnya Portugis ke Nusantara.
+                            </p>
+                        </div>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container left-container">
+                    <div class="time">
+                        <p>1945M</p>
+                    </div>
+                    <div class="text-box h-lima">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Kemerdekaan</h2>
+                            <small>1945M-1966M</small>
+                            <p class="h-desc">Masa Kemerdekaan dimulai ketika Indonesia merdeka dari Jepang dan berakhir
+                                ketika Soeharto dilantik menjadi presiden.
+                            </p>
+                        </div>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container right-container">
+                    <div class="time">
+                        <p>1966M</p>
+                    </div>
+                    <div class="text-box h-enam">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Orde Baru</h2>
+                            <small>1966M-1998M</small>
+                            <p class="h-desc">Masa Orde Baru dimulai pada 11 Maret 1966 dan berakhir di tahun 1998 saat
+                                Soeharto dilengserkan dari kursi presiden.
+                            </p>
+                        </div>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="t-container left-container">
+                    <div class="time">
+                        <p>1998M</p>
+                    </div>
+                    <div class="text-box h-tujuh">
+                        <div class="h-text">
+                            <h2 class="h-title">Masa Reformasi</h2>
+                            <small>1998M-Sekarang</small>
+                            <p class="h-desc">Era Reformasi Indonesia dimulai pada 1998 saat Seoharto mengundurkan diri
+                                sebagai presiden Indonesia dan berlangsung hingga sekarang.
+                            </p>
+                        </div>
+                        <span class="left-arrow"></span>
                     </div>
                 </div>
             </div>
@@ -94,7 +215,50 @@
             </div>
         </div>
     </section>
-    <a href="" class="position-fixed">UP</a>
+    <footer>
+        <div class="introduction">
+            <div class="photo">
+                <img src="assets/photo.png" alt="profil" loading="lazy">
+            </div>
+            <div class="text">
+                <span class="halo">Halo!</span>
+                <p class="intro">Perkenalkan saya adalah Aan Ahmad Nur Dwiyanto, seorang siswa SMK yang sekarang sedang
+                    menekuni jurusan Rekayasa Perangkat Lunak. Keahlian saya adalah mampu
+                    menguasai beberapa bahasa pemograman seperti HTML, CSS, dan Javascript. Dengan tekad yang kuat saya
+                    yakin mampu mengasah kemampuan saya hingga mencapai level tertinggi.</p>
+            </div>
+        </div>
+        <ul class="connect">
+            <li>
+                <h4>Follow Me</h4>
+            </li>
+            <li>
+                <a href=""><i class="fa-brands fa-github"></i>Github</a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>Facebook
+                </a>
+            </li>
+            <li>
+                <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+        </ul>
+        <ul class="contact">
+            <li>
+                <h4>Contact Me</h4>
+            </li>
+            <li>
+                <a class="disabled" href=""><i class="fa-regular fa-envelope"></i>aanahmad51539@gmail.com</a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-school"></i>SMKN 2 Trenggalek</a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-location-dot"></i>Jambu, Tugu, Trenggalek, Jawa Timur</a>
+            </li>
+        </ul>
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>

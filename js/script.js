@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const xp_btn = document.getElementById("xp-btn");
   const sub = document.getElementById("sub");
   const descB = document.getElementById("descB");
+  const up = document.getElementById('up');
 
   window.addEventListener("scroll", function () {
     let value = this.scrollY;
-    console.log(value);
     front.style.transform = "translateY(" + value * 0.2 + "px)";
     back.style.transform = "translateY(" + value * 0.3 + "px)";
     titleB.style.transform = "translateY(" + value * 0.3 + "px)";
@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     xp_btn.style.transform = "translateY(" + value * 0.3 + "px)";
     sub.style.transform = "translateY(" + value * 0.3 + "px)";
     descB.style.transform = "translateY(" + value * 0.3 + "px)";
+
+    if (value > 200){
+      up.style.transform = "translateY(0)";
+    }
+    else{
+      up.style.transform = "translateY(200px)";
+    }
   });
 });
 
