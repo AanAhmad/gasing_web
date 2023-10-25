@@ -327,37 +327,37 @@ nav button {
   left: 0;
 }
 .text-box.h-satu{
-  background-image: linear-gradient(to right , transparent 0%, #333333ce 30%, #333 100%), url(/assets/prasejarah.png);
+  background-image: linear-gradient(to right , transparent 0%, #333333ce 30%, #333 100%), url('/assets/prasejarah.png');
   background-size: cover;
   background-position: center;
 }
 .text-box.h-dua{
-  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url(/assets/relief.jpg);
+  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url('/assets/relief.jpg');
   background-size: cover;
   background-position: center;
 }
 .text-box.h-tiga{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/islam.jpeg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url('/assets/islam.jpeg');
   background-size: cover;
   background-position: top;
 }
 .text-box.h-empat{
-  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url(/assets/kolonialisme.jpg);
+  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url('/assets/kolonialisme.jpg');
   background-size: cover;
   background-position: center;
 }
 .text-box.h-lima{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/kemerdekaan.jpg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url('/assets/kemerdekaan.jpg');
   background-size: cover;
   background-position: top;
 }
 .text-box.h-enam{
-  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url(/assets/ordebaru.jpg);
+  background-image: linear-gradient(to left , transparent 0%, #33333394 30%, #333 100%), url('/assets/ordebaru.jpg');
   background-size: cover;
   background-position: top;
 }
 .text-box.h-tujuh{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/reformasi.jpeg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url('/assets/reformasi.jpeg');
   background-size: cover;
   background-position: top;
 }
