@@ -710,4 +710,11 @@ li a i{
     border-left: 0;
     left: -15px;
   }
+  .photo{
+    width: 60px;
+    height: 60px;
+  }
+  .photo img{
+    width: 80px;
+  }
 }
