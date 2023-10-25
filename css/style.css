@@ -337,7 +337,7 @@ nav button {
   background-position: center;
 }
 .text-box.h-tiga{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/islam.jpg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/islam.jpeg);
   background-size: cover;
   background-position: top;
 }
@@ -357,7 +357,7 @@ nav button {
   background-position: top;
 }
 .text-box.h-tujuh{
-  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/reformasi.jpg);
+  background-image: linear-gradient(to right , transparent 0%, #33333394 30%, #333 100%), url(/assets/reformasi.jpeg);
   background-size: cover;
   background-position: top;
 }
@@ -430,54 +430,113 @@ nav button {
   overflow: hidden;
   object-fit: cover;
 }
+.pesona{
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.carousel-contain{
+  height: 80vh;
+}
+.carousel-inner{
+  border-radius: 20px !important;
+}
+.carousel-item img{
+  object-fit: cover !important;
+}
+.gallery-indo{
+  height: 120vh;
+  width: 80%;
+  margin: auto;
+}
 .gallery-indo .container {
   padding: 5% 0;
 }
 .indo-title {
-  font-size: x-large;
-  font-family: "Outfit", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 .colase {
   position: relative;
   display: grid;
-  gap: 5px;
+  gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(140px, auto);
+  grid-auto-rows: minmax(200px, auto);
 }
-.one {
+.card-gallery{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.text-gallery{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: #33333374;
+  transition: all 400ms ease-in-out;
+}
+.text-gallery:hover{
+  opacity: 1;
+}
+.komodo {
   grid-column: 1 / 3;
-  background-color: #ababab;
+  background-size: cover;
+  background-position: 0 -80px;
+  background-image: url(/assets/komodo.jpg);
   grid-row: 1;
 }
-.two {
+.jawa {
   grid-column: 3 / 4;
-  background-color: #ababab;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/jawa.webp);
   grid-row: 1 / 3;
 }
-.three {
+.dayak {
   grid-column: 1;
-  background-color: #ababab;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/dayak.jpg);
   grid-row: 2 / 5;
 }
-.four {
-  grid-column: 3;
-  background-color: #ababab;
+.badak {
+  grid-column: 2/4;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/badak.jpg);
   grid-row: 3;
 }
-.five {
+.edelweis {
   grid-column: 2;
-  background-color: #ababab;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/edelweis.jpg);
   grid-row: 4;
 }
-.six {
+.harimau {
   grid-column: 3;
-  background-color: #ababab;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/harimau.jpeg);
   grid-row: 4;
+}
+.anggrek{
+  grid-column: 2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/anggrek.jpeg);
+  grid-row: 2;
 }
 .up{
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   top: 85%;
   left: 90%;
   padding: 10px;
@@ -489,7 +548,7 @@ nav button {
   z-index: 1000;
 }
 .up i{
-  font-size: 40px;
+  font-size: 30px;
 }
 .up i:link{
   color: white;
@@ -504,9 +563,16 @@ footer{
   padding: 45px 10%;
   background-color: #333;
 }
+.connection{
+  display: flex;
+  width: 45%;
+}
 .connect{
-  width: 20%;
+  width: 40%;
   height: 100%;
+}
+.contact{
+  width: auto;
 }
 .introduction{
   display: flex;
@@ -600,6 +666,7 @@ li a i{
     text-align: center;
     padding: 4px 8px;
     display: block;
+    color: #fff;
     width: 100% !important;
   }
   .collapse {
@@ -634,7 +701,7 @@ li a i{
     font-size: small;
   }
   .intro-container {
-    height: 140vh;
+    height: 110vh;
   }
   .triangle,
   .subtriangle {
@@ -654,26 +721,31 @@ li a i{
     height: 64% !important;
   }
   .indo-intro {
-    height: 60vh;
+    height: 45vh;
   }
   .intro-desc {
     position: absolute;
+    text-align: start;
     width: 100% !important;
     padding: 20px 25px;
     left: 0 !important;
     right: 0 !important;
   }
   .intro-desc h1 {
-    font-size: 23px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
     width: 100%;
+  }
+  .intro-desc p{
+    margin-top: 10px;
+    font-size: 12px;
   }
   .indo-intro img {
     width: 100%;
     top: 0 !important;
   }
   .indo-kekayaan {
-    height: 60vh;
+    height: 45vh;
   }
   .kekayaan-desc {
     position: absolute;
@@ -683,9 +755,13 @@ li a i{
     right: 0 !important;
   }
   .kekayaan-desc h1 {
-    font-size: 23px;
+    font-size: 22px;
     margin-bottom: 10px;
     width: 100%;
+  }
+  .kekayaan-desc p{
+    margin-top: 10px;
+    font-size: 12px;
   }
   .indo-kekayaan img {
     width: 100%;
@@ -701,6 +777,33 @@ li a i{
     height: 86% !important;
     left: 0;
   }
+  .h-text{
+    width: 100%;
+  }
+  .h-title{
+    font-size: 20px;
+  }
+  .h-desc{
+    font-size: 14px;
+  }
+  .left-container{
+    text-align: start;
+  }
+  .left-container .h-text{
+    margin-left: 0;
+  }
+  .text-box.h-satu{
+  background-image: linear-gradient(to left , transparent 0%, #333333ce 30%, #333 100%), url(/assets/prasejarah.png);
+  }
+  .text-box.h-tiga{
+  background-image: linear-gradient(to left , transparent 0%, #333333ce 30%, #333 100%), url(/assets/islam.jpeg);
+  }
+  .text-box.h-lima{
+  background-image: linear-gradient(to left , transparent 0%, #333333ce 30%, #333 100%), url(/assets/kemerdekaan.jpg);
+  }
+  .text-box.h-tujuh{
+  background-image: linear-gradient(to left , transparent 0%, #333333ce 30%, #333 100%), url(/assets/reformasi.jpeg);
+  }
   .time {
     left: -30px;
   }
@@ -709,5 +812,76 @@ li a i{
     border-right: 15px solid #333;
     border-left: 0;
     left: -15px;
+  }
+  .carousel-contain{
+    height: 40vh;
+  }
+  .gallery-indo{
+    height: 50vh;
+  }
+  .colase{
+    grid-auto-rows: minmax(80px, auto);
+  }
+  footer{
+    height: 50vh;
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+  .introduction{
+    width: 100%;
+  }
+  .text{
+    margin-left: auto;
+    width: 70%;
+  }
+  .photo{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  .photo img{
+    left: -5px;
+    width: 100px;
+    height: auto;
+  }
+  .halo{
+    font-size: 20px;
+  }
+  .text .intro{
+    font-size: 12px;
+  }
+  .connection{
+    width: 100%;
+  }
+  .connect{
+    width: 30%;
+  }
+  .contact{
+    width: 70%;
+  }
+  .connection ul{
+    padding: 0;
+  }
+  ul h4{
+    font-size: 14px;
+  }
+  footer ul li a{
+    font-size: 10px;
+  }
+  footer li a i{
+    font-size: 12px;
+  }
+  .fa-brands{
+    font-size: 12px;
+  }
+  .up{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    left: 80%;
+    top: 90%;
+  }
+  .up i{
+    font-size: 24px;
   }
 }
