@@ -446,7 +446,7 @@ nav button {
   object-fit: cover !important;
 }
 .gallery-indo{
-  height: 120vh;
+  height: 125vh;
   width: 80%;
   margin: auto;
 }
@@ -817,7 +817,7 @@ li a i{
     height: 40vh;
   }
   .gallery-indo{
-    height: 50vh;
+    height: 55vh;
   }
   .colase{
     grid-auto-rows: minmax(80px, auto);
@@ -883,5 +883,14 @@ li a i{
   }
   .up i{
     font-size: 24px;
+  }
+  .carousel-caption p{
+    font-size: 12px !important;
+  }
+  .card-gallery{
+    background-position: center !important;
+  }
+  .text-gallery h2{
+    font-size: 12px;
   }
 }
